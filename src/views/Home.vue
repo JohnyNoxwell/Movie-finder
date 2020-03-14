@@ -1,12 +1,7 @@
 <template>
   <div class="home">
     <HelloWorld msg="MovieFinder" />
-    <input
-      v-model="search"
-      type="text"
-      class="search"
-      @keyup.enter="searchFilm"
-    />
+    <input v-model="search" type="text" class="search" @keyup.enter="searchFilm" />
     <button @click="searchFilm">Search</button>
     <h2 v-if="noResults" class="result-alert">NO RESULTS</h2>
   </div>
@@ -68,7 +63,7 @@ export default {
   font-size: 18px;
 }
 .result-alert {
-  color: red;
+  color: rebeccapurple;
 }
 button {
   padding: 10px;
